@@ -36,7 +36,7 @@ void rightview(node *root)
        {
           struct node * curr=q.front();
           q.pop();
-
+                                                           
           if(i==size-1)
           {
               cout<<curr->data<<" ";

@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int rev(int a[],int n)
+void rev(int a[],int n)
 {
 
     int i,j;
