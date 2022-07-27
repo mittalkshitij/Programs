@@ -1,5 +1,5 @@
 
-// CYCLE DETECTION USING DFS DIRECTED GRAPH  ( NOT WORKING )
+// CYCLE DETECTION USING DFS DIRECTED GRAPH 
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -74,13 +74,6 @@ int main()
         addEdge(adj,u,v);
     }
 
-    //  // print adj list
-    // for (int j = 1; j <=n; ++j) {
-    //     cout << "\n Adjacency list of vertex " << j << "\n"<<j ;
-    //     for (auto x : adj[j])
-    //         cout << "-> " << x;
-    //     cout<<endl;
-    // }
 
     bool ans=isCycle(n,adj);
 
