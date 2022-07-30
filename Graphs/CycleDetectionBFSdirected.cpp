@@ -27,7 +27,7 @@ bool toposort(int V, vector<int> adj[])
         {
             indegree[it]++;
         }
-    }
+    } 
 
     for(int i=0;i<V;i++)
     {

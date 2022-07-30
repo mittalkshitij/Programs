@@ -27,7 +27,7 @@ bool checkForCycle(int node, vector<int> adj[],int visited[],int dfsVis[])
             if(checkForCycle(it,adj,visited,dfsVis))
             return true;
         }
-        else if(dfsVis[it])
+        else if(dfsVis[it]==1)
         return true;
     }
     }

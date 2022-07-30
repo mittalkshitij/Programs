@@ -22,7 +22,7 @@ bool checkForCycle(int s,vector<int> &visited,vector<int> adj[])
     while(!q.empty())
     {
         int node=q.front().first;
-        int prev=q.front().second;
+        int parent=q.front().second;
         q.pop();
 
         for(auto it: adj[node])
@@ -32,7 +32,7 @@ bool checkForCycle(int s,vector<int> &visited,vector<int> adj[])
                 visited[it]=1;   
                 q.push({it,node});
             }
-            else if(prev!=it)
+            else if(parent!=it)
             return true;
         }
     }
